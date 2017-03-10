@@ -22,6 +22,7 @@ class AnotherAdminView(admin.BaseView):
 
 # Create flask app
 app = Flask(__name__, template_folder='templates')
+app.config['FLASK_ADMIN_SWATCH']='flatly'
 app.debug = True
 
 # Flask views
